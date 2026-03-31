@@ -16,7 +16,7 @@ const AboutSection = () => (
           <img
             src={aboutImg}
             alt="Masters Touch Services professional team"
-            className="rounded-2xl w-full object-cover shadow-2xl shadow-gold/10"
+            className="rounded-2xl w-full object-cover shadow-2xl shadow-primary/10"
             loading="lazy"
             width={1024}
             height={768}
@@ -32,13 +32,13 @@ const AboutSection = () => (
         <p className="text-primary text-sm tracking-[0.2em] uppercase font-semibold mb-2">About Us</p>
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
           Your Trusted Partner in{" "}
-          <span className="gold-text">Property Care</span>
+          <span className="gold-text">Professional Cleaning</span>
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Masters Touch Services PTY LTD has been providing premium cleaning, maintenance, and repair solutions for over a decade. We serve commercial and residential clients with unwavering dedication to quality.
+          We provide professional cleaning services across residential and commercial spaces in Sydney. Our experienced and reliable team ensures every job is done to the highest standard.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-8">
-          Our trained professionals use industry-leading equipment and eco-friendly products to deliver results that exceed expectations — every single time.
+          With attention to detail and a commitment to quality, Masters Touch Services delivers spotless results — from end-of-lease cleans to ongoing office maintenance.
         </p>
 
         <div className="grid grid-cols-3 gap-4">

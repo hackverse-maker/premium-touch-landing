@@ -20,7 +20,7 @@ const HeroSection = () => (
         transition={{ delay: 0.2 }}
         className="text-primary text-sm tracking-[0.3em] uppercase mb-4 font-semibold"
       >
-        Premium Service Solutions
+        Professional Cleaning Services You Can Trust
       </motion.p>
 
       <motion.h1
@@ -42,7 +42,7 @@ const HeroSection = () => (
         transition={{ delay: 0.6 }}
         className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10"
       >
-        Delivering excellence in cleaning, maintenance, and repair services. Your property deserves the master's touch.
+        Delivering excellence in residential and commercial cleaning across Sydney. Your space deserves the master's touch.
       </motion.p>
 
       <motion.div
@@ -58,7 +58,7 @@ const HeroSection = () => (
           Get a Quote <ArrowRight size={20} />
         </a>
         <a
-          href="tel:+27000000000"
+          href="tel:+61415883582"
           className="border border-primary/30 text-foreground font-semibold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors text-lg"
         >
           <Phone size={20} /> Call Us
