@@ -88,23 +88,13 @@ const ContactSection = () => {
               </div>
 
               <div className="space-y-5">
-                <a href="tel:+61415883582" className="flex items-center gap-4 group">
+                <a href="tel:+61461431340" className="flex items-center gap-4 group">
                   <div className="gold-gradient p-3 rounded-xl">
                     <Phone size={20} className="text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Mobile</p>
-                    <p className="text-foreground group-hover:text-primary transition-colors">+61 415 883 582</p>
-                  </div>
-                </a>
-
-                <a href="tel:+61452419789" className="flex items-center gap-4 group">
-                  <div className="gold-gradient p-3 rounded-xl">
-                    <Phone size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Cleaning Service</p>
-                    <p className="text-foreground group-hover:text-primary transition-colors">+61 452 419 789</p>
+                    <p className="text-sm text-muted-foreground">Phone</p>
+                    <p className="text-foreground group-hover:text-primary transition-colors">+61 461 431 340</p>
                   </div>
                 </a>
 
@@ -124,7 +114,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Address</p>
-                    <p className="text-foreground text-sm">Hebe St, Greenacre NSW 2190, Sydney, Australia</p>
+                    <p className="text-foreground text-sm">Unit 306, 23 Marshall St, Bankstown NSW 2200, Australia</p>
                   </div>
                 </div>
 
