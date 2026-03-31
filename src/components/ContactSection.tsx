@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import AnimatedSection from "./AnimatedSection";
-import { Phone, Mail, MapPin, Send, Loader2 } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Loader2, Clock, Facebook } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -15,7 +15,6 @@ const ContactSection = () => {
       return;
     }
     setLoading(true);
-    // Simulate sending
     await new Promise((r) => setTimeout(r, 1500));
     setLoading(false);
     toast({ title: "Message sent!", description: "We'll get back to you shortly." });
@@ -65,7 +64,7 @@ const ContactSection = () => {
                   maxLength={1000}
                   rows={5}
                   className="w-full bg-card border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your cleaning needs..."
                 />
               </div>
               <button
@@ -84,28 +83,38 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display text-xl font-bold mb-4">Contact Information</h3>
                 <p className="text-muted-foreground text-sm mb-6">
-                  Reach out to us for a free consultation and quote. We respond within 24 hours.
+                  Reach out to us for a free consultation and quote. We respond promptly.
                 </p>
               </div>
 
               <div className="space-y-5">
-                <a href="tel:+27000000000" className="flex items-center gap-4 group">
+                <a href="tel:+61415883582" className="flex items-center gap-4 group">
                   <div className="gold-gradient p-3 rounded-xl">
                     <Phone size={20} className="text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="text-foreground group-hover:text-primary transition-colors">+27 (0) 00 000 0000</p>
+                    <p className="text-sm text-muted-foreground">Mobile</p>
+                    <p className="text-foreground group-hover:text-primary transition-colors">+61 415 883 582</p>
                   </div>
                 </a>
 
-                <a href="mailto:info@masterstouchservices.co.za" className="flex items-center gap-4 group">
+                <a href="tel:+61452419789" className="flex items-center gap-4 group">
+                  <div className="gold-gradient p-3 rounded-xl">
+                    <Phone size={20} className="text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Cleaning Service</p>
+                    <p className="text-foreground group-hover:text-primary transition-colors">+61 452 419 789</p>
+                  </div>
+                </a>
+
+                <a href="mailto:Themasterstouchservices112@gmail.com" className="flex items-center gap-4 group">
                   <div className="gold-gradient p-3 rounded-xl">
                     <Mail size={20} className="text-primary-foreground" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-foreground group-hover:text-primary transition-colors">info@masterstouchservices.co.za</p>
+                    <p className="text-foreground group-hover:text-primary transition-colors text-sm">Themasterstouchservices112@gmail.com</p>
                   </div>
                 </a>
 
@@ -115,9 +124,34 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Address</p>
-                    <p className="text-foreground">Johannesburg, Gauteng, South Africa</p>
+                    <p className="text-foreground text-sm">Hebe St, Greenacre NSW 2190, Sydney, Australia</p>
                   </div>
                 </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="gold-gradient p-3 rounded-xl">
+                    <Clock size={20} className="text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Availability</p>
+                    <p className="text-foreground">Always Open</p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.facebook.com/Masterstouchservices112?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="gold-gradient p-3 rounded-xl">
+                    <Facebook size={20} className="text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Facebook</p>
+                    <p className="text-foreground group-hover:text-primary transition-colors">Follow us on Facebook</p>
+                  </div>
+                </a>
               </div>
             </div>
           </AnimatedSection>

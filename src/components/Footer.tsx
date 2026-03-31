@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t border-border py-12 px-6">
@@ -27,16 +27,15 @@ const Footer = () => (
       </div>
 
       <div className="flex items-center gap-4">
-        {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-          <a
-            key={i}
-            href="#"
-            className="text-muted-foreground hover:text-primary transition-colors"
-            aria-label="Social link"
-          >
-            <Icon size={20} />
-          </a>
-        ))}
+        <a
+          href="https://www.facebook.com/Masterstouchservices112?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-primary transition-colors"
+          aria-label="Facebook"
+        >
+          <Facebook size={20} />
+        </a>
       </div>
     </div>
   </footer>
