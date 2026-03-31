@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lVA3TH7o7ErgiQOQLSbIvGwXvN7r6F.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KWx6UylN1bqGLGv1MQBfOFZvHzYCDy.png"
             alt="Master's Touch Logo"
             className="h-12 w-auto"
           />
