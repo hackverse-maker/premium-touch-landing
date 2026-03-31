@@ -34,9 +34,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="font-display text-xl font-bold">
-          <span className="gold-text">Masters Touch</span>
-          <span className="text-foreground/70 text-sm ml-1 font-sans font-light">Services</span>
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lVA3TH7o7ErgiQOQLSbIvGwXvN7r6F.png"
+            alt="Master's Touch Logo"
+            className="h-12 w-auto"
+          />
+          <div className="hidden sm:block">
+            <span className="font-display text-lg font-bold text-primary">Masters Touch</span>
+            <span className="text-foreground/70 text-xs font-sans block">Services</span>
+          </div>
         </a>
 
         {/* Desktop */}
