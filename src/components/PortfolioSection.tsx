@@ -1,15 +1,8 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
-import p1 from "@/assets/portfolio-1.jpg";
-import p2 from "@/assets/portfolio-2.jpg";
-import p3 from "@/assets/portfolio-3.jpg";
-import p4 from "@/assets/portfolio-4.jpg";
 
 const images = [
-  { src: p1, alt: "Commercial office deep cleaning result" },
-  { src: p2, alt: "Building exterior maintenance" },
-  { src: p3, alt: "Kitchen renovation project" },
-  { src: p4, alt: "Industrial warehouse cleaning" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jZJYCQlnpzcsLE7GlTlsonETKwbFPP.png", alt: "Kitchen and furniture product showcase" },
 ];
 
 const PortfolioSection = () => (
@@ -22,26 +15,19 @@ const PortfolioSection = () => (
         </h2>
       </AnimatedSection>
 
-      <div className="grid sm:grid-cols-2 gap-6">
+      <div className="flex justify-center">
         {images.map((img, i) => (
-          <AnimatedSection key={i} delay={i * 0.1}>
+          <AnimatedSection key={i} delay={i * 0.1} className="w-full max-w-6xl">
             <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="relative rounded-2xl overflow-hidden group cursor-pointer aspect-[4/3]"
+              whileHover={{ scale: 1.01 }}
+              className="relative rounded-2xl overflow-hidden group cursor-pointer"
             >
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-auto object-contain group-hover:opacity-90 transition-opacity duration-700"
                 loading="lazy"
-                width={800}
-                height={600}
               />
-              <div className="absolute inset-0 bg-background/0 group-hover:bg-background/50 transition-colors duration-300 flex items-center justify-center">
-                <p className="text-foreground font-display text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  View Project
-                </p>
-              </div>
             </motion.div>
           </AnimatedSection>
         ))}

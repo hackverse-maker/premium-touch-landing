@@ -1,5 +1,4 @@
 import AnimatedSection from "./AnimatedSection";
-import aboutImg from "@/assets/about-team.jpg";
 import { Award, Clock, Users } from "lucide-react";
 
 const stats = [
@@ -14,8 +13,8 @@ const AboutSection = () => (
       <AnimatedSection>
         <div className="relative">
           <img
-            src={aboutImg}
-            alt="Masters Touch Services professional team"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jZJYCQlnpzcsLE7GlTlsonETKwbFPP.png"
+            alt="Premium kitchen and furniture products"
             className="rounded-2xl w-full object-cover shadow-2xl shadow-primary/10"
             loading="lazy"
             width={1024}
