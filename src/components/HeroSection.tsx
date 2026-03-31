@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
     <img
-      src={heroBg}
-      alt="Professional cleaning team at work"
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jZJYCQlnpzcsLE7GlTlsonETKwbFPP.png"
+      alt="Premium kitchen and furniture showcase"
       className="absolute inset-0 w-full h-full object-cover"
       width={1920}
       height={1080}
     />
-    <div className="absolute inset-0 bg-background/80" />
+    <div className="absolute inset-0 bg-background/85" />
 
     <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
       <motion.p

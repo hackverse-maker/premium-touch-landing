@@ -1,46 +1,45 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import { Sparkles, Home, Building2, Briefcase, HardHat, Paintbrush } from "lucide-react";
-import cleaningImg from "@/assets/service-cleaning.jpg";
-import maintenanceImg from "@/assets/service-maintenance.jpg";
-import repairsImg from "@/assets/service-repairs.jpg";
+
+const productImg = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jZJYCQlnpzcsLE7GlTlsonETKwbFPP.png";
 
 const services = [
   {
     icon: Sparkles,
     title: "End Of Lease Cleaning",
     desc: "Comprehensive bond cleaning to ensure you get your full deposit back. We leave properties spotless and inspection-ready.",
-    img: cleaningImg,
+    img: productImg,
   },
   {
     icon: Home,
     title: "Pre Lease Cleaning",
     desc: "Deep cleaning for properties before new tenants move in. Fresh, sanitised, and welcoming spaces from day one.",
-    img: maintenanceImg,
+    img: productImg,
   },
   {
     icon: Paintbrush,
     title: "General Cleaning",
     desc: "Regular cleaning for homes and apartments. Dusting, mopping, vacuuming, and sanitising to keep your space pristine.",
-    img: repairsImg,
+    img: productImg,
   },
   {
     icon: Building2,
     title: "Office Cleaning",
     desc: "Professional office cleaning services to maintain a healthy, productive work environment for your team.",
-    img: cleaningImg,
+    img: productImg,
   },
   {
     icon: Briefcase,
     title: "Commercial Cleaning",
     desc: "Large-scale cleaning solutions for retail spaces, warehouses, and commercial properties of any size.",
-    img: maintenanceImg,
+    img: productImg,
   },
   {
     icon: HardHat,
     title: "After Renovation Cleaning",
     desc: "Post-construction cleanup removing dust, debris, and residue so your newly renovated space shines.",
-    img: repairsImg,
+    img: productImg,
   },
 ];
 
